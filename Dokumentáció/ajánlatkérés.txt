@@ -1,0 +1,45 @@
+Ajánlatkérés
+
+Tisztelt Cím!
+
+Cégünk egy hirdetés kapcsán talált cégükre, így az XY Kft (cím, a továbbiakban ajánlatkérő) ezúton kéri fel ajánlattételre az Ön által képviselt céget (a továbbiakban Ajánlattevőt), a jelen ajánlatkérésben megadott feltételek szerinti ajánlat elkészítésére. 
+
+1. Ajánlatkérő neve, címe
+XY Kft
+1234 Budapest, Zsák utca 1.
+Telefon: +36 1 123 4567
+Email: info@xykft.hu
+
+Technikai kapcsolattartó: Mász Kálmán
+Telefon: +36 20 123 1234
+Email: kalman@xykft.hu
+
+2. Ajánlat tárgya:
+XY Kft blablabla fontos projektjének keretében asdasd rendszer megtervezése és elkészítése, valamint üzemeltetési támogatás nyújtása
+
+3. Megkötendő szerződés tárgya:
+Szoftver tervezés, megvalósítás és technikai támogatás nyújtás.
+
+4. A szerződés időtartama és teljesítési határideje:
+A teljesítés befejezési időpontja legkésőbb a szerződés megkötésétől számított 30 naptári nap.
+A támogatási szerződés időtartama a teljesítéstől számított 24 hónap, havi maximum 10 óra, ebből fel nem használat esetén maximum havi 2 óra vihető át a következő hónapra.
+
+5. Teljesítés helye:
+XY Kft irodájában.
+
+6. Ajánlattételi határidő:
+2018.01.04 12:00
+
+7. Ajánlat benyújtásának módja:
+Elektronikus formában a palyazat@xykft.hu email címen. A levél tárgya legyen: XY Kft - fontos projekt 2018
+
+8. Az ajánlatok elbírálának időpontja:
+Legkésőbb: 2018.01.06 12:00
+
+9. Szerződéskötés időpontja:
+Leghamarabb: 2018.01.07
+
+10. Elvárt műszaki tartalom:
+XY Kft arculatába és informatikai környezetébe maximális illesztkedés.
+
+
