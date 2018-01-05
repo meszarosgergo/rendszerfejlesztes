@@ -4,5 +4,14 @@ A XY Kft egy 100 fõs vállalat, ami két telephelyen mûködik. A cég jelenleg nem r
 
 A blablabla fontos projekt egyik feladata a kommunikáció javítása. Reményeink szerint az új rendszerrel fejleszteni tudunk ezen.	
 
-Az elkészült weboldalt fontos, hogy csak autentikáció után lehessen elérni és fontos, hogy csak irodai hálózatból. A rendszer tudjon kezelni három jogosultsági szintet: legyen egy adminisztrátor csoport, aki kezeli a felhasználókat, látja és szerkeszteni és törölni tudja a tartalmakat. Legyen egy szerkesztõ jogkör, akik új tartalmakat tudnak létrehozni, illetve módosítani. Továbbá legyen egy felhasználói szint, akik láthatják a tartalmakat. A rendszerben lehessen közérdekû híreket létrehozni, képeket feltölteni, illetve beágyazott videókat megosztani. 
+Az elkészült weboldalt fontos, hogy csak autentikáció után lehessen elérni és fontos, hogy csak irodai hálózatból. 
+A rendszer tudjon kezelni három jogosultsági szintet: 
+Legyen egy adminisztrátor csoport, aki kezeli a felhasználókat, látja és szerkeszteni és törölni tudja a tartalmakat. 
+Legyen egy szerkesztõ jogkör, akik új tartalmakat tudnak létrehozni, illetve módosítani. 
+Továbbá legyen egy felhasználói szint, akik láthatják a tartalmakat. 
+
+A rendszerben lehessen közérdekû híreket létrehozni, képeket feltölteni, illetve beágyazott videókat megosztani.
+
+A megvalósítás során Apache 2.4.29 verziójú webszerverrel kompatibilis rendszernek kell létrejönnie. 
+A weboldalt kiszolgáló szerveren PHP 5-ös verzió fut, illetve MySQL adatbáziskezelõ használatát kérjük. 
 
