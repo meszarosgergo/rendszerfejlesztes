@@ -1,0 +1,8 @@
+Követelményspecifikáció
+
+A XY Kft egy 100 fõs vállalat, ami két telephelyen mûködik. A cég jelenleg nem rendelkezik egységes belsõ kommunikáció csatornával, a közérdekû információk emailben terjednek, ami nem hatékony és sokszor elvesznek a fontos információk, valamint nagyobb méretû tartalmak megosztására nem alkalmas.
+
+A blablabla fontos projekt egyik feladata a kommunikáció javítása. Reményeink szerint az új rendszerrel fejleszteni tudunk ezen.	
+
+Az elkészült weboldalt fontos, hogy csak autentikáció után lehessen elérni és fontos, hogy csak irodai hálózatból. A rendszer tudjon kezelni három jogosultsági szintet: legyen egy adminisztrátor csoport, aki kezeli a felhasználókat, látja és szerkeszteni és törölni tudja a tartalmakat. Legyen egy szerkesztõ jogkör, akik új tartalmakat tudnak létrehozni, illetve módosítani. Továbbá legyen egy felhasználói szint, akik láthatják a tartalmakat. A rendszerben lehessen közérdekû híreket létrehozni, képeket feltölteni, illetve beágyazott videókat megosztani. 
+
