@@ -1,5 +1,6 @@
-Tagok:
+﻿Tagok:
 Mészáros Gergő
 Tóth Nóra
 
 Megvalósított feladat:
+XY Kft Intranet létrehozása
