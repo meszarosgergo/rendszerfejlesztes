@@ -20,6 +20,7 @@
 		}
 	}
 	echo "<td>".$_SESSION['name']."</td>";
+	echo "<td><a class=menu href=change_password.html>Jelszó módosítás</a></td>";
 	echo "<td><a class=menu href=logout.php>Kijelentkezés</a></td>";
 	echo "</tr>";	
 	echo "</table>";   
