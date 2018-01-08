@@ -1,40 +1,40 @@
-﻿<html>
-<head>
-  <meta charset="UTF-8">
-  
-</head> 
-<body>
-<div class="wrapper2">
-<?php  
+﻿<?php  
 	session_start();
 	include('config/dbconnect.php');
-	$query="select title, link, role_id from menu";  
-	$result=mysqli_query($con,$query) or die ("Nem sikerült".$query); 
-	echo "<table class='menu'>";
-	echo "<tr>";
-	while (list($title,$link,$role_id) = mysqli_fetch_row($result))   
-	{     
-		if($_SESSION['role_id'] <= $role_id)
-		{
-			echo "<td><a class=menu href=menu.php?d=".$link.">".$title."</a></td>";
-		}
-	}
-	echo "<td>".$_SESSION['name']."</td>";
-	echo "<td><a class=menu href=logout.php>Kijelentkezés</a></td>";
-	echo "</tr>";	
-	echo "</table>";   
-	mysqli_close($con);  
-	if(!isset($_GET["d"]))     
-		$_GET["d"]=0;   
 
-	switch($_GET["d"])   
-	{      
-		case 0: include "hirek.php";break;     
-		case 1: include "bekuldes.php";break;      
-		case 2: include "adminisztracio.php";break;  
-		default: break;   
-	}
+	$query = "select title, link, role_id from menu";  
+	$result = mysqli_query($con,$query) or die ("Nem sikerült".$query); 
+	mysqli_close($con);  
 ?>
-</div>
-</body>
-</html>
+
+<header>
+	<div class="blog-masthead">
+		<div class="container">
+		<!-- Név + Logout -->
+		<div class="float-right">
+				<span class="username"><?php echo $_SESSION['name']?></span>
+				<a href="logout.php" class="logout">Kijelentkezés</a>
+				<a class="menu" href="change_password.html">Jelszó módosítás</a>
+			</div>
+			<nav class="nav">
+				<?php
+				while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC))   
+				{     
+					if ($_SESSION['role_id'] <= $row['role_id'])
+					{
+						echo "<a class='nav-link' href='menu.php?d=".$row['link']."'>".$row['title']."</a>";
+					} 
+				}
+				?>
+			</nav>
+			
+		</div>
+	</div>
+
+	<div class="blog-header">
+		<div class="container">
+			<h1 class="blog-title">XY IntraNet</h1>
+			<p class="lead blog-description">Belső weboldal a XY Kft dolgozóinak.</p>
+		</div>
+	</div>
+</header>

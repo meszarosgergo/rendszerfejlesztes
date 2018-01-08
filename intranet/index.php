@@ -7,5 +7,9 @@ if (!$_SESSION['username'] ) {
 }
 else
 {
-	header('location: menu.php');
+  header('location: navigation.php');
+  
+
+  
 }
+?>
