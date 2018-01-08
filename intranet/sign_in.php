@@ -18,12 +18,12 @@
   <body>
     <!-- START container -->
     <div class="container">
-      <form class="form-signin">
+      <form action="login_check.php" method="post" class="form-signin">
         <h2 class="form-signin-heading">XY KFt Intranet</h2>
         <label for="inputUserName" class="sr-only">Felhasználónév</label>
-        <input type="text" id="inputUserName" class="form-control" placeholder="Felhasználónév" required autofocus>
+        <input type="text" id="inputUserName" name="username" class="form-control" placeholder="username" required autofocus>
         <label for="inputPassword" class="sr-only">Jelszó</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Jelszó" required>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Bejelentkezés</button>
       </form>
     </div>
