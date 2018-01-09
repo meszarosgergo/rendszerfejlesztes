@@ -1,0 +1,35 @@
+Követelményspecifikáció
+
+A XY Kft egy 100 fõs vállalat, ami két telephelyen mûködik. A cég jelenleg nem rendelkezik egységes belsõ kommunikáció csatornával, a közérdekû információk emailben terjednek, ami nem hatékony és sokszor elvesznek a fontos információk, valamint nagyobb méretû tartalmak megosztására nem alkalmas.
+
+A blablabla fontos projekt egyik feladata a kommunikáció javítása. Reményeink szerint az új rendszerrel fejleszteni tudunk ezen.	
+
+Az elkészült weboldalt fontos, hogy csak autentikáció után lehessen elérni és fontos, hogy csak irodai hálózatból. 
+A rendszer tudjon kezelni három jogosultsági szintet: 
+Legyen egy adminisztrátor csoport, aki kezeli a felhasználókat, látja és szerkeszteni és törölni tudja a tartalmakat. 
+Legyen egy szerkesztõ jogkör, akik új tartalmakat tudnak létrehozni, illetve módosítani. 
+Továbbá legyen egy felhasználói szint, akik láthatják a tartalmakat. 
+
+A rendszerben lehessen közérdekû híreket létrehozni, képeket feltölteni, illetve beágyazott videókat megosztani.
+
+A megvalósítás során Apache 2.4.29 verziójú webszerverrel kompatibilis rendszernek kell létrejönnie. 
+A weboldalt kiszolgáló szerveren PHP 5-ös verzió fut, illetve MySQL adatbáziskezelõ használatát kérjük. 
+
+
+Modul		ID	Név			V.	Kifejtés
+Webszerver		K1	Webszerver		0.1	Apache 2.4.29 verziójú webszerverrel kompatibilis rendszer, PHP5 használat
+Adatbázis		K2	Adatbázis		0.1	MySQL adatbázis használat
+Böngészõ		K3	Böngészõ kompatibilitás	0.1	Firefox 52.0+ ESR kompatibilitás
+Jogosultság		K4	Beléptetés		1.0	A felhasználó a jelszavának megadásával beléphet a rendszerbe. Ha rossz a jelszó, akkor a következõ üzenetet írja ki: „Rossz jelszó! Próbáld újra.” 
+Jogosultság		K5	Beléptetés		1.0	Csak belsõ hálózatról legyen elérhetõ a weboldal (webszerver beállítás, a feladat során nem valósítjuk meg).
+Jogosultság		K6	Jogosultsági szintek	1.0	A rendszer tudjon kezelni három jogosultsági szintet: adminisztrátor, szerkesztõ, látogató.
+Jogosultság		K7	Adminisztrátor jogok	1.0	Az adminisztrátor csoport, aki kezeli a felhasználókat, látja és szerkeszteni és törölni (elrejteni) tudja a tartalmakat. Kb. 5 fõ.
+Jogosultság		K8	Szerkesztõ jogok	1.0	Legyen egy szerkesztõ jogkör, akik új tartalmakat tudnak létrehozni, illetve módosítani. Kb. 10 fõ.
+Jogosultság		K9	Adminisztrátor jogok	1.0	Legyen egy felhasználói szint, akik láthatják a tartalmakat. Minden újonan létrejövõ felhasználó ide kerüljön.
+Szerkesztõ		K10	Tartalom szerkesztõ	1.0	lehessen közérdekû híreket létrehozni, képeket feltölteni, illetve beágyazott videókat megosztani. Egyszerû szövegbeviteli mezõvel, illetve képfeltöltés tallózással.
+Szerkesztõ		K11	Adminisztrátor jogok	1.0	A tartalmakat tudja "törölni", vagyis elrejteni, hogy szükség esetén minden visszakereshetõ legyen
+Felhasználó kezelés	K12	Felhasználó kezelés	1.0	Az adminisztrátorok tudjanak felhasználót felvenni, kezdeti jelszóval, névvel, felhasználónévvel, email címmel és jogkör beállítással.
+Szerkesztõ		K13	Tartalom szerkesztõ	2.0	Fejlesztett beviteli mezõ formázási lehetõségekkel.
+Jogosultság		K14	Felhasználózárolás	2.0	Csak maximum háromszor lehet megpróbálni a jelszót, utána 1 óráig letiltásra kerül az adott felhasználó. 
+Jogosultság		K15	Jelszómódósítás		2.0	Legyen lehetõség jelszót változtatni. Ha felhasználó új felhasználó, akkor csak jelszóváltoztatás után tudjon belépni, elsõ belépéshez kapjon egy generált jelszót az adminisztrátortól.
+Jogosultság		K16	Címtár szinkron		3.0	Címtárszinkron és SSO megvalósítása.
