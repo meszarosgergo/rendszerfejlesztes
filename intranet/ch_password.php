@@ -1,9 +1,22 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="stylesheet" type="text/css" href="mystyle.css">
-		<title>Jelszó változtatás</title>
+ <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Blog XY KFT</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/blog.css" rel="stylesheet">
+
+
+ 
 		<script type="text/javascript">
 		<!--		  
 		  function validate()
@@ -38,6 +51,8 @@
 	</script>
 	</head>
 <body>
+
+  <?php include('menu.php'); ?>
 	<div class="wrapper">
 	<form action="change_password.php" name="myForm" method="post" onsubmit="return(validate());">
 		<table>
@@ -47,7 +62,7 @@
 		<tr><td></td><td><input type="submit" value="Módosít"></td></tr>
 		</table>
 	</form>
-	<a href="menu.php?d=2">Vissza</a>
+	<a href="hirek.php">Vissza</a>
 	</div>
 </body>
 </html>
