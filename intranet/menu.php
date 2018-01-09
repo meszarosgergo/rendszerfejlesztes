@@ -13,7 +13,7 @@
 		<!-- Név + Logout -->
 		<div class="float-right">
 				<span class="username"><?php echo $_SESSION['name']?></span>
-				<a class="menu" href="change_password.html">Jelszó módosítás</a>
+				<a class="menu" href="ch_password.php">Jelszó módosítás</a>
 				<a href="logout.php" class="logout">Kijelentkezés</a>
 			</div>
 			<nav class="nav">
