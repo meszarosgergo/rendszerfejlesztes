@@ -1,0 +1,78 @@
+Felhasználói dokumentáció
+
+	Feladat:
+		Az XY Kft. cég számára kialakított belső hálózat, melynek célja a jobb kommunikációs kapcsolat kialakítása, több szerepkörrel.
+	
+	Futási környezet leírása:
+		Windows operációs rendszeren futatott böngészők, alapértelmezett a Mozilla Firefox 52.0 ESR változata. A cég kérésére a böngésző kezdőlapjaként könnyen elérhető lesz a weboldal, azaz https://intranet.xy.hu címen. 
+		
+		A rendszerkövetelmény Pentium 4 vagy újabb processzor, mely támogatja SSE2-t.  2GB RAM, 200MB hely a merevlemezen.
+		
+	Szerepkörök:
+		1. Rendszergazda: Felhasználókezelés és tartalomkezelés teljeskörűen
+		2. Adminisztrátor - Tartalmakat hozhatnak létre
+		3. Felhasználó - Oldalon található információk elérése, olvasása.
+		
+	Használat:
+		A rendszer használata bejelentkezéshez kötött. A sikeres bejelentkezés után a felhasználó az oldal tetején található menüsor segítsével navigálhat az oldalon. Az alábbi menüpontokban ezeket fogjuk részletesen leírni.
+		
+		1. Bejelentkezés
+			 A bejelentkezéshez mindenkinek adott hozzáférést a XY Kft, így minden alkalmazottjának személyre szabott, egyedi azonosítója van, ami rendszerint az alkalmazott nevéből lett előllítva. A jelszavát kérje felettesétől, melyet első bejelentkezés után ajánlott megváltoztatni. A rendszer nem lépteti ki a felhasználót a böngésző bezárása esetén.
+			
+			A bejelentkezés folyamata:
+				https://intranet.xy.hu megnyitásakor egy űrlapmező jelenik meg, két beviteli mezővel.
+				Az egyedi felhasználónevet az első beviteli mezőbe kell beírni, amely "username" felirattal jelöli a várt adatot. A jelszavát a következő elembe kell írni,amely a "password" felirattal van ellátva.
+				
+				A helyes adatok megadása után a "Bejelentkezés" gombra történő kattintásra a rendszer belépteti a felhasználót. Amennyiben az adatok hibásat voltak, a rendszer jelzi ezt a felhasználó felé.
+				
+		2.  Hírek
+			A hírfolyam megtekintése bármilyen felhasználó számára lehetséget, itt következő nyomon a cég hírei, fontosabb információi, mint például szabadságkérés igénylésének a menetének a megváltozása, céges csapatépítőről tájékoztató, vagy a legközelebbi negyedéves megbeszélés ideje és helyszíne. 
+			A hírek szerkesztéhez, újak hozzáadásához csak az adminisztrátoknak és a rendszergazdának van jogosultsága.
+			
+		3. Jelszó módosítás
+			A jelszó megváltoztatáshoz egy újabb űrlapot kell kitölteni. Az első beviteli elembe a régi jelszavunkat kell megadni, aztán az azt követő mezőkbe az új jelszavunkat. A duplikált megadásra azért van szükség, hogy a felhasználó biztosan jól írja le a jelszavát. 
+			A "Módosít" gombra kattinva helyes adatok megadása esetén sikeresen módosítottuk a jelszavunkat. Amennyiben hibás volt bármelyik jelszó, a rendszer figyelmeztet.
+			
+		4. Adminisztráció
+			Ehhez a menüponthoz csak a Rendszergazdának van jogosutsága. Ezen az oldalon módosíthatóak a felhasználók, illetve itt lehetséges az új felhasználó felvitele.
+			
+			a, Felhasználó szerkesztése
+				Az adott felhasználóhoz tartozó "Szerkesztés" gomb megnyomása után van lehetőségünk az adatok megváltoztatására. Itt lehetőség van a név, felhasználónév, e-mail cím, szerepkör módosítására, illetve adott esetben tiltani az adott személyt. A "Mentés" gomb megnyomása után az adatok megváltoznak.
+			
+			b,  Új felhasználó felvitele
+				Az "Új felhasználó" gomb megnyomása után lehetőségünk van új személy felvitelére. Egy űrlapot kell kitöltenünk a megfelelő adatokkal. A "Felvétel" gombra kattintás után frissül az adatbázis az új személlyel.
+				
+		5. Kijelentkezés
+			A "Kijelentkezés" feliratva kattintva kiléphetünk a rendszerből.
+		
+	Hibaüzenetek:
+		A rendszer használata során előfordulhatnak hibaüzenetek. Az alábbi hibaüzenetekre kínálunk egy lehetséges megoldást.
+			1. Bejelentkezés
+				a, Hibás jelszó
+					A felhasználónév helyesen lett megadva, ellenben a megadott jelszó nem egyezik az adatbázisban lévővel. A jelszó újbóli beírása orvosolhatja a problémát. Ha többszöri próbálkozás esetén is ugyan ezt az hibaüzenetet kapjuk, fordoljunk a rendszergazdához új jelszó igénylése miatt.
+				b, Tiltott felhasználó
+					Amennyiben ez a hibaüzenet fogadja, kérjük forduljon egy adminisztrátorhoz, mivel az adott felhasználónév tiltólistára került. 
+			
+			2. Jelszó módosítás
+				a, Hibás jelszó
+					A beírt régi jelszó nem egyezik a fiókhoz tartozó jelszóval.  Kérjük próbálja meg újra beírni a jelenlegi jelszavát, nagyobb figyelemmel. Amennyiben továbbra is ezt a hibaüzenetet kapja, kérjük forduljon a rendszergazdához. Illetve az új jelszó minimum 8 karakter hosszú legyen, kérjük vegye figyelembe ezt is.
+				b, A két jelszó nem egyezik
+					A megadott új jelszó, és az új jelszó ismételt megadása nem egyezik. Próbálja meg újra megadni az új jelszót. Amennyiben továbbra is ezt a hibaüzenetet kapja, kérjük forduljon a rendszergazdához.
+			3. Új felhasználó felvitele
+				a, Add meg a felhasználóneved
+					A felhasználónév megadása kötelező, kérjük töltse ki.
+				b, Add meg az e-mail címed
+					Az e-mail cím megadása kötelező, kérjük töltse ki.
+				c, Add meg a teljes neved
+					A teljes név megadása kötelező, kérjük töltse ki.
+				d, Hibás jelszó
+					A jelszó mező kitöltése kötelező, és minimum 8 karakter hosszú legyen.
+				e, A két jelszó nem egyezik
+					A megadott új jelszó, és az új jelszó ismételt megadása nem egyezik. Kérjük próbálja meg újra beírni.
+					
+				
+			
+		
+		
+		
+	

@@ -2,7 +2,7 @@
 //csatlakozás db-hez és adatok frissítése, majd visszatérés
 session_start();
 include('config/dbconnect.php');
-if($_POST['disabled2'])
+if(isset($_POST['disabled2']))
 {
 	$dis = 1;
 } else { $dis = 0;};
