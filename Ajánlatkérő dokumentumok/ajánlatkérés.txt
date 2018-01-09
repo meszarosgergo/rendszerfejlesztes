@@ -1,4 +1,4 @@
-Ajánlatkérés
+﻿Ajánlatkérés
 
 Tisztelt Cím!
 
@@ -41,6 +41,13 @@ Leghamarabb: 2018.01.15
 
 10. Elvárt műszaki tartalom:
 XY Kft arculatába és informatikai környezetébe maximális illesztkedés.
-Az elkészült weboldalnak a cégünk által már más célra is használt apache kiszolgálón kell futnia, illetve MySQL adatbázis kell használnia a követelményspecifikációban leírtak szerint.
+Az elkészült weboldalnak a cégünk által már más célra is használt apache kiszolgálón kell futnia, illetve MySQL adatbázis kell használnia.
+Az elkészült weboldalt fontos, hogy csak autentikáció után lehessen elérni és fontos, hogy csak irodai hálózatból. 
+A rendszer tudjon kezelni három jogosultsági szintet: 
+Legyen egy adminisztrátor csoport, aki kezeli a felhasználókat, látja és szerkeszteni és törölni tudja a tartalmakat. 
+Legyen egy szerkesztő jogkör, akik új tartalmakat tudnak létrehozni, illetve módosítani. 
+Továbbá legyen egy felhasználói szint, akik láthatják a tartalmakat. 
+
+A rendszerben lehessen közérdekű híreket létrehozni, képeket feltölteni, illetve beágyazott videókat megosztani.
 A pályázó cégnek készítenie kell egy ütemtervet, egy költségtervet, ami tartalmazza a tervezés, megvalósítás és a helyszínen üzemebehelyeuést. Továbbá készülnie kell egy rendszertervnek, tesztjegyzőkönyvnek és felhasználói dokumentációnak. 
 
