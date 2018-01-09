@@ -18,7 +18,12 @@
 
   <body>
   <?php include('menu.php'); ?>
-
+<div class="blog-header">
+		<div class="container">
+			<h1 class="blog-title">XY IntraNet</h1>
+			<p class="lead blog-description">Belső weboldal a XY Kft dolgozóinak.</p>
+		</div>
+	</div>
     <main role="main" class="container">
 
       <div class="row">

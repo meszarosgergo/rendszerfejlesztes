@@ -13,8 +13,8 @@
 		<!-- Név + Logout -->
 		<div class="float-right">
 				<span class="username"><?php echo $_SESSION['name']?></span>
-				<a href="logout.php" class="logout">Kijelentkezés</a>
 				<a class="menu" href="change_password.html">Jelszó módosítás</a>
+				<a href="logout.php" class="logout">Kijelentkezés</a>
 			</div>
 			<nav class="nav">
 				<?php
@@ -22,7 +22,7 @@
 				{     
 					if ($_SESSION['role_id'] <= $row['role_id'])
 					{
-						echo "<a class='nav-link' href='menu.php?d=".$row['link']."'>".$row['title']."</a>";
+						echo "<a class='nav-link' href='".$row['link']."'>".$row['title']."</a>";
 					} 
 				}
 				?>
@@ -31,10 +31,5 @@
 		</div>
 	</div>
 
-	<div class="blog-header">
-		<div class="container">
-			<h1 class="blog-title">XY IntraNet</h1>
-			<p class="lead blog-description">Belső weboldal a XY Kft dolgozóinak.</p>
-		</div>
-	</div>
+	
 </header>

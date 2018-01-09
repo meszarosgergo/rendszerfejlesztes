@@ -6,7 +6,9 @@ $_GET["d"] = 0;
 switch($_GET["d"])   
 	{      
 		case 0: header('location: hirek.php');;break;     
-		case 1: include "bekuldes.php";break;      
-		case 2: include "adminisztracio.php";break;  
+		case 1:header('location: bekuldes.php');;break;      
+		case 2:header('location: adminisztracio.php');;break;  
 		default: break;   
 	}
+	
+	?>

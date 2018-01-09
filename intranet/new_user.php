@@ -12,7 +12,7 @@ if ($numOfSameUser == 0)
 
 	$result=mysqli_query($con, $query) or die ("Nem sikerült".mysqli_error($con)); 
 	mysqli_close($con);
-	header("location: menu.php?d=2");
+	header("location: adminisztracio.php");
 }
 else
 {
