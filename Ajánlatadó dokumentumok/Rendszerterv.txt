@@ -1,0 +1,35 @@
+A fejlesztés egy intranet oldalt valósít meg. 
+Célja, hogy az XY Kft. belsõ kommunikációját javítsa.
+A rendszernek 3 szintû jogosultságot kell kezelnie (látogató, szerkesztõ, adminisztrátor). 
+Csak authentikáció után legyen használható.
+
+A megvalósítás során egy intranet adatbázist hozunk létre a MySQL adatbázisban az adatok tárolására. 
+3 tábla kerül megvalósításra:
+users - a felhasználók adatainak tárolására (id, név, felhasználónév, email, jelszó-hash, hozzáférés szint, tiltott státusz.
+menu - a menü elnevezések és jogosultsági szintek meghatározásához.
+content - a tartalmak tárolására.
+
+A megvalósított weboldal a következõ modulokra bontható:
+-authentikáció: a felhasználó be- és kiléptetését végzi (mindenki számára)
+-hírolvasó: az oldalon közzétett tartalmak megjelenítése (bejelentkezett felhasználók számára)
+-tartalom beküldés: a tartalmak közzétételére (szerkesztõ felhasználók számára)
+-felhasználókezelés: felhasználók felvételére, tiltására, módosítására. (adminisztrátor felhasználók számára)
+
+Authentikáció modul:
+index.php-t elindítva jutunk el a bejelentkezõ felületig, ahol felhasználónév és jelszó megadása után lehet bejelentkezni.
+A folyamat megvizsgálja, hogy a megadott adatok egyeznek-e az adatbázisban lévõ adatokkal.
+
+Hírolvasó modul:
+
+Tartalom beküldés:
+
+Felhasználó kezelés:
+Egyrész minden bejelentkezett felhasználónak lehetõsége van megváltoztatni a jelszavát a menü "Jelszóváltoztatás" menüpontjában.
+Ehhez meg kell adnia a jelenlegi jelszavát, majd kétszer az újat. Ezután az adatbázisba is bekerül a változás titkosítva.
+
+Másrészt az 1-es role_id-val rendelkezõ adminisztrátorok látnak egy adminisztráció menüpontot is, ahol láthatják az adatbázisban
+szereplõ dolgozókat, illetve fel is vehetnek újat.
+Új felhasználó rögzítése egy új formon történik. Meg kell adni a nevet, felhasználónevet és az email címet, valamint a kezdeti jelszót.
+Ezután megjelenik a felhasználó a listában, ahonnan el lehet érni a szerkesztés funkciót az adatok módosítására.
+
+A rendszer PHP és HTML nyelven készült, MySQL adatbáziskezelõ rendszert használ.
