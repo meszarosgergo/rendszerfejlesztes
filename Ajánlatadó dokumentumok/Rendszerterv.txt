@@ -1,35 +1,41 @@
-A fejlesztés egy intranet oldalt valósít meg. 
-Célja, hogy az XY Kft. belsõ kommunikációját javítsa.
-A rendszernek 3 szintû jogosultságot kell kezelnie (látogató, szerkesztõ, adminisztrátor). 
-Csak authentikáció után legyen használható.
+A fejlesztÃ©s egy intranet oldalt valÃ³sÃ­t meg. 
+CÃ©lja, hogy az XY Kft. belsÅ‘ kommunikÃ¡ciÃ³jÃ¡t javÃ­tsa.
+A rendszernek 3 szintÅ± jogosultsÃ¡got kell kezelnie (lÃ¡togatÃ³, szerkesztÅ‘, adminisztrÃ¡tor). 
+Csak authentikÃ¡ciÃ³ utÃ¡n legyen hasznÃ¡lhatÃ³.
 
-A megvalósítás során egy intranet adatbázist hozunk létre a MySQL adatbázisban az adatok tárolására. 
-3 tábla kerül megvalósításra:
-users - a felhasználók adatainak tárolására (id, név, felhasználónév, email, jelszó-hash, hozzáférés szint, tiltott státusz.
-menu - a menü elnevezések és jogosultsági szintek meghatározásához.
-content - a tartalmak tárolására.
+A megvalÃ³sÃ­tÃ¡s sorÃ¡n egy intranet adatbÃ¡zist hozunk lÃ©tre a MySQL adatbÃ¡zisban az adatok tÃ¡rolÃ¡sÃ¡ra. 
+3 tÃ¡bla kerÃ¼l megvalÃ³sÃ­tÃ¡sra:
+users - a felhasznÃ¡lÃ³k adatainak tÃ¡rolÃ¡sÃ¡ra (id, nÃ©v, felhasznÃ¡lÃ³nÃ©v, email, jelszÃ³-hash, hozzÃ¡fÃ©rÃ©s szint, tiltott stÃ¡tusz.
+menu - a menÃ¼ elnevezÃ©sek Ã©s jogosultsÃ¡gi szintek meghatÃ¡rozÃ¡sÃ¡hoz.
+content - a tartalmak tÃ¡rolÃ¡sÃ¡ra.
 
-A megvalósított weboldal a következõ modulokra bontható:
--authentikáció: a felhasználó be- és kiléptetését végzi (mindenki számára)
--hírolvasó: az oldalon közzétett tartalmak megjelenítése (bejelentkezett felhasználók számára)
--tartalom beküldés: a tartalmak közzétételére (szerkesztõ felhasználók számára)
--felhasználókezelés: felhasználók felvételére, tiltására, módosítására. (adminisztrátor felhasználók számára)
+A megvalÃ³sÃ­tott weboldal a kÃ¶vetkezÅ‘ modulokra bonthatÃ³:
+-authentikÃ¡ciÃ³: a felhasznÃ¡lÃ³ be- Ã©s kilÃ©ptetÃ©sÃ©t vÃ©gzi (mindenki szÃ¡mÃ¡ra)
+-hÃ­rolvasÃ³: az oldalon kÃ¶zzÃ©tett tartalmak megjelenÃ­tÃ©se (bejelentkezett felhasznÃ¡lÃ³k szÃ¡mÃ¡ra)
+-tartalom bekÃ¼ldÃ©s: a tartalmak kÃ¶zzÃ©tÃ©telÃ©re (szerkesztÅ‘ felhasznÃ¡lÃ³k szÃ¡mÃ¡ra)
+-felhasznÃ¡lÃ³kezelÃ©s: felhasznÃ¡lÃ³k felvÃ©telÃ©re, tiltÃ¡sÃ¡ra, mÃ³dosÃ­tÃ¡sÃ¡ra. (adminisztrÃ¡tor felhasznÃ¡lÃ³k szÃ¡mÃ¡ra)
 
-Authentikáció modul:
-index.php-t elindítva jutunk el a bejelentkezõ felületig, ahol felhasználónév és jelszó megadása után lehet bejelentkezni.
-A folyamat megvizsgálja, hogy a megadott adatok egyeznek-e az adatbázisban lévõ adatokkal.
+AuthentikÃ¡ciÃ³ modul:
+index.php-t elindÃ­tva jutunk el a bejelentkezÅ‘ felÃ¼letig, ahol felhasznÃ¡lÃ³nÃ©v Ã©s jelszÃ³ megadÃ¡sa utÃ¡n lehet bejelentkezni.
+A folyamat megvizsgÃ¡lja, hogy a megadott adatok egyeznek-e az adatbÃ¡zisban lÃ©vÅ‘ adatokkal.
 
-Hírolvasó modul:
+HÃ­rolvasÃ³ modul:
 
-Tartalom beküldés:
+Tartalom bekÃ¼ldÃ©s:
 
-Felhasználó kezelés:
-Egyrész minden bejelentkezett felhasználónak lehetõsége van megváltoztatni a jelszavát a menü "Jelszóváltoztatás" menüpontjában.
-Ehhez meg kell adnia a jelenlegi jelszavát, majd kétszer az újat. Ezután az adatbázisba is bekerül a változás titkosítva.
+FelhasznÃ¡lÃ³ kezelÃ©s:
+EgyrÃ©sz minden bejelentkezett felhasznÃ¡lÃ³nak lehetÅ‘sÃ©ge van megvÃ¡ltoztatni a jelszavÃ¡t a menÃ¼ "JelszÃ³vÃ¡ltoztatÃ¡s" menÃ¼pontjÃ¡ban.
+Ehhez meg kell adnia a jelenlegi jelszavÃ¡t, majd kÃ©tszer az Ãºjat. EzutÃ¡n az adatbÃ¡zisba is bekerÃ¼l a vÃ¡ltozÃ¡s titkosÃ­tva.
 
-Másrészt az 1-es role_id-val rendelkezõ adminisztrátorok látnak egy adminisztráció menüpontot is, ahol láthatják az adatbázisban
-szereplõ dolgozókat, illetve fel is vehetnek újat.
-Új felhasználó rögzítése egy új formon történik. Meg kell adni a nevet, felhasználónevet és az email címet, valamint a kezdeti jelszót.
-Ezután megjelenik a felhasználó a listában, ahonnan el lehet érni a szerkesztés funkciót az adatok módosítására.
+MÃ¡srÃ©szt az 1-es role_id-val rendelkezÅ‘ adminisztrÃ¡torok lÃ¡tnak egy adminisztrÃ¡ciÃ³ menÃ¼pontot is, ahol lÃ¡thatjÃ¡k az adatbÃ¡zisban
+szereplÅ‘ dolgozÃ³kat, illetve fel is vehetnek Ãºjat.
+Ãšj felhasznÃ¡lÃ³ rÃ¶gzÃ­tÃ©se egy Ãºj formon tÃ¶rtÃ©nik. Meg kell adni a nevet, felhasznÃ¡lÃ³nevet Ã©s az email cÃ­met, valamint a kezdeti jelszÃ³t.
+EzutÃ¡n megjelenik a felhasznÃ¡lÃ³ a listÃ¡ban, ahonnan el lehet Ã©rni a szerkesztÃ©s funkciÃ³t az adatok mÃ³dosÃ­tÃ¡sÃ¡ra.
 
-A rendszer PHP és HTML nyelven készült, MySQL adatbáziskezelõ rendszert használ.
+A rendszer PHP Ã©s HTML nyelven kÃ©szÃ¼lt, MySQL adatbÃ¡ziskezelÅ‘ rendszert hasznÃ¡l.
+
+A teljesÃ­tÃ©s befejezÃ©si idÅ‘pontja legkÃ©sÅ‘bb a szerzÅ‘dÃ©s megkÃ¶tÃ©sÃ©tÅ‘l szÃ¡mÃ­tott 30 naptÃ¡ri nap.
+A szerzÅ‘dÃ©st megkÃ¶tÃ©sÃ©nek a hatÃ¡rideje 2018.01.15 .
+Az Ã¼zembehelyezÃ©s vÃ©gsÅ‘ idÅ‘pontja 2018.02.14 .
+A tÃ¡mogatÃ¡si szerzÅ‘dÃ©s idÅ‘tartalmÃ¡nak a kezdete a teljesÃ­tÃ©stÅ‘l szÃ¡mÃ­tott 24 hÃ³nap(legkÃ©sÅ‘bb 2020.02.14).
+
